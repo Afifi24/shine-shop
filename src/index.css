@@ -8,12 +8,12 @@
  box-sizing: border-box;
 }
 .star{
-    position: relative;
+position: relative;
 top: .625rem;
 display: inline-block;
 width: 2.25rem;
 margin-right: 1.375rem;
-    background-image: url("https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6af93e8d10f_Star.svg");
+background-image: url("https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6af93e8d10f_Star.svg");
 background-position: 0 0;
 background-size: contain;
 background-repeat: no-repeat;
