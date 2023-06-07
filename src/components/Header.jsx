@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='w-[95%] m-auto min-h-screen '>
-      <nav className='flex items-center py-14 relative z-50 justify-between '>
+    <div className='w-[95%] m-auto  '>
+      <nav className='flex items-center py-4 lg:py-14 relative z-50 justify-between '>
          <div className='flex items-center gap-2 sm:gap-3 md:gap-6 lg:gap-14'>
              <div className='cursor-pointer'>
               <img className=' w-5 md:w-11 lg:w-13' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6398ee8d10a_Union.svg" alt="" />

@@ -2,8 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='-mt-36 sm:mt-4 md:mt-4'>
-    <div className='w-[87.5%] p-1 max-h-screen lg:h-screen bg-white  m-auto'>
+    // -mt-36 sm:mt-4 
+    // lg:h-screen
+    <div className='mt-10'>
+    <div className=' w-[87.5%] p-[1px] max-h-screen lg:h-screen  bg-white  m-auto'>
         <div id='video' className=' lg:max-h-[80%] relative overflow-hidden  '>
           
            <video className=' ' autoPlay loop>
