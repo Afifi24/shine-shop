@@ -30,8 +30,8 @@ const Header = () => {
                   <br />
                   <span className='text-[#a4765b]'>your own</span>
                   <br />
-                  <span className='uppercase ml-2 sm:ml-0 '>
-                    {/* <strong className='star  w-20 h-20 '></strong> */}
+                  <span className='uppercase  ml-2 sm:ml-0 '>
+                    {/* <strong className='star hidden lg:inline-block  w-20 h-20 '></strong> */}
                     history
                     </span>
                 </h1>
@@ -49,7 +49,11 @@ const Header = () => {
                 
              </div>
              <div className='flex-1 mr-6 lg:mr-12'>
-              <div className='w-full'>  <img className='rounded-t-full border md:border-2 border-white' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df60ac7e8d115_Rectangle%2039195.webp" alt="" /></div>
+              <div className='w-full relative'>  <img className='rounded-t-full border md:border-2 border-white' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df60ac7e8d115_Rectangle%2039195.webp" alt="" />
+              <div className='absolute top-1 left-1/2 -translate-x-1/2'>
+                <strong className='star hidden lg:inline-block h-4   lg:h-8 '></strong>
+              </div>
+              </div>
                <div className='flex  py-0 sm:py-1 md:py-1 lg:py-4 px-6 border-r border-l md:border-r-2 md:border-l-2  border-white items-center justify-between'>
                <div className=''><img className='imgbg max-w-[40%] lg:max-w-[70%]' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df68872e8d121_Logo.svg"  alt="" /></div>
                <div className='circle w-[6rem] relative h-[2rem] sm:h-[3.75rem]'>
