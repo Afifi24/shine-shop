@@ -8,7 +8,7 @@ const Hero = () => {
     <div className=' w-[87.5%] p-[1px] max-h-screen lg:h-screen  bg-white  m-auto'>
         <div id='video' className=' lg:max-h-[80%] relative overflow-hidden  '>
           
-           <video className=' ' autoPlay loop>
+           <video className=' ' autoPlay muted loop>
             <source className='h-full w-full' src='https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdfefaf501f87cea63773c_old_gold_jewelry_and_watches_7617mov (720p)-transcode.mp4' />
            </video>
            <h1 className='text-white text-center absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-[2rem] md:text-[4rem] lg:text-[5.6rem] uppercase  z-50'>play reel</h1>
