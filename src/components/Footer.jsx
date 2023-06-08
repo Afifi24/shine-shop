@@ -7,7 +7,7 @@ import {FaPinterestP} from 'react-icons/fa'
 import {AiOutlineTwitter} from 'react-icons/ai'
 const Footer = () => {
   return (
-    <div className='mt-10 pb-10'>
+    <div className=' mt-8 md:mt-28 pb-10'>
 
       <div className='w-[95%] grid grid-cols-7 p-[1px] lg:p-1  m-auto lg:min-h-[60vh] bg-white '>
         <div className='col-span-2 flex items-center justify-center flex-col gap-10 lg:gap-28 '>
@@ -49,11 +49,11 @@ const Footer = () => {
                <button className='absolute right-1/4  '><CgArrowLongRight className=' text-md md:text-xl lg:text-2xl text-[#999] hover:scale-110 duration-200'/></button>
               </form>
               <div className='flex gap-2 sm:gap-2 md:gap-3 lg:gap-4 items-center  '>
-                <a className='border-[1px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaLinkedinIn className='text-[10px]'/></a>
-                <a className='border-[1px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><AiOutlineInstagram className='text-[10px]'/></a>
-                <a className='border-[1px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaFacebookF className='text-[10px]'/></a>
-                <a className='border-[1px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaPinterestP className='text-[10px]'/></a>
-                <a className='border-[1px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><AiOutlineTwitter className='text-[10px]'/></a>
+                <a className='border-[1px] md:border-[2px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaLinkedinIn className='text-[10px] md:text-sm'/></a>
+                <a className='border-[1px] md:border-[2px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><AiOutlineInstagram className='text-[10px] md:text-sm'/></a>
+                <a className='border-[1px] md:border-[2px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaFacebookF className='text-[10px] md:text-sm'/></a>
+                <a className='border-[1px] md:border-[2px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><FaPinterestP className='text-[10px] md:text-sm'/></a>
+                <a className='border-[1px] md:border-[2px] p-[0.5px] md:p-2 border-[#999] hover:border-white duration-200' href="#"><AiOutlineTwitter className='text-[10px] md:text-sm'/></a>
             
               </div>
           </div>
