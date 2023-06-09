@@ -16,15 +16,15 @@ const Contact = () => {
           <div className='col-span-1 '>
            <motion.div initial={{scale:0.4}} whileInView={{scale:1, transition:{duration:1.5}}} >
            <img className='rounded-t-full   border md:border-2 border-white' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df66a3ae8d11e_Group%20427319907.webp" alt="" />
-            <div className='flex md:border-b-2 md:border-r-2 md:border-l-2 border-white border  border-t-0 p-1 md:p-2 md:p-4 text-white justify-between items-center'>
-              <p className=' text-[6px]  sm:text-[12px] md:text-sm lg:text-md'>Exclusive</p>
-              <CgArrowLongRight className=' text-md cursor-pointer  md:text-xl lg:text-2xl text-[#999] hover:scale-110 duration-200'/>
+           <div className='relative group'>
+           <div className='flex relative z-50  md:border-b-2 md:border-r-2 md:border-l-2 border-white border  border-t-0 p-1 md:p-2 md:p-4 text-white justify-between items-center'>
+              <p className=' text-[6px]  sm:text-[12px] md:text-sm group-hover:text-black duration-1000 lg:text-md'>Exclusive</p>
+              <CgArrowLongRight className=' text-md group-hover:text-black duration-1000  cursor-pointer  md:text-xl lg:text-2xl text-[#999] hover:scale-110 duration-200'/>
             </div>
+            <div className='absolute   z-10 w-0 group-hover:w-full duration-1000 h-full bg-white left-0 top-0 z-0 '></div>
+           </div>
+
            </motion.div>
-            {/* <div className='flex text-white mt-6  md:mt-14 lg:mt-20 items-center text-[0.3rem] sm:text-[0.5rem] md:text-[0.8rem]  lg:text-[1.06rem] md:gap-6 gap-3 '>
-                  <div className=' w-[20px] sm:w-[40px] md:w-[60px] h-[1px] bg-white'/>
-                  <h2 className='uppercase '>discover new <br /> collection ss'20</h2>
-                </div> */}
                 <div className='flex group text-white mt-6  md:mt-14 lg:mt-20 items-center text-[0.3rem] sm:text-[0.5rem] md:text-[0.8rem]  lg:text-[1.06rem] md:gap-6 gap-3 '>
                  <div  className=' cursor-pointer  md:w-[60px] sm:w-[40px] w-[20px]   group-hover:w-[0px] duration-500  h-[1px] bg-white'/>
                 
