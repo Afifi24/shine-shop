@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {motion} from 'framer-motion'
 const Header = () => {
   return (
     <div className='w-[95%] m-auto  '>
@@ -9,18 +9,43 @@ const Header = () => {
               <img className=' w-5 md:w-11 lg:w-13' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6398ee8d10a_Union.svg" alt="" />
              </div>
              <div className='flex items-center text-[6px] sm:text-[12px] md:text-md lg:text-[16px] gap-2 md:gap-3  lg:gap-6'>
+                  <div className=' h-3 flex group items-center overflow-hidden  '>
+                  <div className='flex flex-col gap-2 duration-500 translate-y-2 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 sm:translate-y-3  md:group-hover:-translate-y-3  md:translate-y-3 lg:group-hover:-translate-y-4  lg:translate-y-4'>
                   <a className='uppercase text-white' href="#">shop</a>
+                  <a className='uppercase text-white' href="#">shop</a>
+                  </div>
+                  </div>
                   <div className='h-[0.75px] md:h-[1px] bg-white w-[30px] md:w-[40px] lg:w-[60px]'/>
+                  <div className=' h-3 flex group items-center overflow-hidden  '>
+                  <div className='flex flex-col gap-2 duration-500 translate-y-2 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 sm:translate-y-3  md:group-hover:-translate-y-3  md:translate-y-3 lg:group-hover:-translate-y-4  lg:translate-y-4'>
                   <a className='uppercase text-white' href="#">lookbook</a>
+                  <a className='uppercase text-white' href="#">lookbook</a>
+                  </div>
+                  </div>
                   <div className='h-[0.75px] md:h-[1px] bg-white w-[30px] md:w-[40px] lg:w-[60px]'/>
+                  <div className=' h-3 flex group items-center overflow-hidden  '>
+                  <div className='flex flex-col gap-2 duration-500 translate-y-2 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 sm:translate-y-3  md:group-hover:-translate-y-3  md:translate-y-3 lg:group-hover:-translate-y-4  lg:translate-y-4'>
                   <a className='uppercase text-white' href="#">journal</a>
+                  <a className='uppercase text-white' href="#">journal</a>
+                  </div>
+                  </div>
 
              </div>
          </div>
          <div className='flex items-center   text-[6px] sm:text-[12px] md:text-md lg:text-[16px]  gap-2 md:gap-3 lg:gap-6'>
+                  <div className=' h-3 flex group items-center overflow-hidden  '>
+                  <div className='flex flex-col gap-2 duration-500 translate-y-2 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 sm:translate-y-3  md:group-hover:-translate-y-3  md:translate-y-3 lg:group-hover:-translate-y-4  lg:translate-y-4'>
                   <a className='uppercase text-white' href="#">search</a>
-                   <div className='h-[0.75px] md:h-[1px] bg-white w-[30px] md:w-[40px] lg:w-[60px]'/>
+                  <a className='uppercase text-white' href="#">search</a>
+                  </div>
+                  </div>
+                 <div className='h-[0.75px] md:h-[1px] bg-white w-[30px] md:w-[40px] lg:w-[60px]'/>
+                 <div className=' h-3 flex group items-center overflow-hidden  '>
+                  <div className='flex flex-col gap-2 duration-500 translate-y-2 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 sm:translate-y-3  md:group-hover:-translate-y-3  md:translate-y-3 lg:group-hover:-translate-y-4  lg:translate-y-4'>
                   <a className='uppercase text-white' href="#">cart(o)</a>
+                  <a className='uppercase text-white' href="#">cart(o)</a>
+                  </div>
+                  </div>
          </div>
       </nav>
         <div className='flex lg:-mt-32 gap-10 sm:gap-10  items-center md:gap-12 lg:gap-32'>
@@ -40,13 +65,16 @@ const Header = () => {
                 <img className='absolute right-[20%] top-[38%] max-w-[16%]' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df60c3de8d113_Group%20427319904.webp" alt="" />
                 
                 <img className='absolute max-w-[30%]   left-[14%] -bottom-1 sm:-bottom-6' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df62880e8d111_Group%20427319903%20(1).webp" alt="" />
-              
                 </div>
-                <div className='flex  items-center text-[0.3rem] sm:text-[0.5rem] md:text-[0.8rem]  lg:text-[1.06rem] md:gap-6 gap-3 right-0 lg:right-10 -bottom-5 absolute'>
-                  <div className=' w-[20px] sm:w-[40px] md:w-[60px] h-[1px] bg-white'/>
-                  <h2 className='uppercase '>discover new <br /> collection ss'20</h2>
-                </div>
+                <div className='flex group  items-center text-[0.3rem] sm:text-[0.5rem] md:text-[0.8rem]  lg:text-[1.06rem] md:gap-6 gap-3 right-0 lg:right-10 -bottom-5 absolute'>
+                 <div  className=' cursor-pointer  md:w-[60px] sm:w-[40px] w-[20px]   group-hover:w-[0px] duration-500  h-[1px] bg-white'/>
                 
+                        <div className='cursor-pointer'>
+                        <h2 className='uppercase '>discover new <br /> collection ss'20</h2>
+                        <div className='w-0 group-hover:w-full duration-500 h-[1px] bg-white' />
+                        </div>
+               
+                </div>
              </div>
              <div className='flex-1 mr-6 lg:mr-12'>
               <div className='w-full relative'>  <img className='rounded-t-full border md:border-2 border-white' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df60ac7e8d115_Rectangle%2039195.webp" alt="" />

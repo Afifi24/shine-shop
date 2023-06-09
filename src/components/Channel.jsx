@@ -1,22 +1,22 @@
 import React,{useContext} from 'react'
-import {channeldata} from '../data'
+import {motion} from 'framer-motion'
 import {CartContext} from './Context'
 const Channel = () => {
   const {id,bigimg,smalling,desc,Next,Prev,index} = useContext(CartContext)
   return (
     <div className='mt-12'>
-      <div className='flex flex-col sm:flex-row  items-center md:h-[80%]  lg:h-screen bg-white'>
-         <div className='flex-1 sm:py-1  h-full'>
+      <div className='flex flex-col overflow-hidden sm:flex-row  items-center md:h-[80%]  lg:h-screen bg-white'>
+         <motion.div initial={{x:30,opacity:0}} animate={{x:0,opacity:1,transition:{duration:1}}} key={index} className='flex-1  sm:py-1  h-full'>
             <img className='w-full h-full object-cover' src={bigimg} alt={desc} />
-         </div>
+         </motion.div>
          <div className='flex-1 p-2 relative flex-col h-full flex items-center justify-center'>
          <div className='top-10 flex flex-col items-center justify-center absolute right-4'>
            <img className='' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6fcf4e8d119_Star%20big.svg" alt="" />
            <img className='w-6 mr-10' src="https://assets.website-files.com/62fdecbc519df619cde8d0f1/62fdecbc519df6fcf4e8d119_Star%20big.svg" alt="" />
            </div>
-             <div className='w-1/2 flex items-center justify-center'>
-             <img className=' sm:h-[80%] rounded-t-full  object-cover' src={smalling} alt={desc} />
-             </div>
+             <motion.div   className='w-1/2  flex items-center justify-center'>
+             <motion.img initial={{x:30,opacity:0}} animate={{x:0,opacity:1,transition:{duration:1}}} key={index} className=' sm:h-[80%] rounded-t-full  object-cover' src={smalling} alt={desc} />
+             </motion.div>
              <div>
                  <p className=' md:text-[1rem] pt-10 md:pt-0 lg:text-[2rem] h-[20vh] text-center  max-w-[400px]'>{desc}</p>
              </div>
